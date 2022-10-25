@@ -1,0 +1,38 @@
+m-score {
+    position: absolute;
+    /* width: calc(100% - (var(--scoreMargin) * 2)); */
+    width: var(--scoreWidth);
+    height: 100%;
+    margin: var(--scoreMargin);
+    margin-top: 50px;
+    top: 50px;
+    z-index: 0;
+}
+
+m-staff {
+    margin-bottom: 25px;
+}
+
+m-staff-line {
+    background-color: black;
+    height: var(--staffLineSize);
+    width: 100%;
+    /*margin-bottom: var(--staffLineMargin);*/
+    border-bottom: var(--staffLineMargin) solid var(--bgColor);
+    display: block;
+    position: relative;
+}
+
+m-white-staff-line {
+    background-color: var(--bgColor);
+    position: relative;
+}
+
+m-measure-line {
+    height: calc( (var(--staffLineSize) * var(--linesPerStaff) * 2) + (var(--staffLineMargin) * ((var(--linesPerStaff) - 2) * 2)));
+    background-color: black;
+    width: var(--measureLineSize);
+    position: absolute;
+    left: 0;
+    top: 0;
+}

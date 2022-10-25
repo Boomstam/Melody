@@ -1,0 +1,61 @@
+.menu {
+    position: fixed;
+    height: 25px;
+    z-index: 1;
+}
+
+.menu-category {
+    width: 100px;
+    z-index: 1;
+    position: relative;
+    background-color: var(--bgColor);
+    cursor: pointer;
+}
+
+.menu-item-list {
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.menu-header+ul {
+    display: none;
+    z-index: 1;
+    position: relative;
+}
+
+.menu-header:hover+ul,
+.menu-item-list:hover {
+    display: block;
+}
+
+m-dialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    display: none;
+    z-index: 1;
+}
+
+m-dialog-close {
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+m-dialog-close>* {
+    background-color: black;
+    height: 3px;
+}
+
+m-dialog-close-line1 {
+    transform: rotate(45deg);
+}
+
+m-dialog-close-line2 {
+    transform: rotate(-45deg);
+}

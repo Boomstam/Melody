@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/score.css">
+    <link rel="stylesheet" href="css/noteInput.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="plugins/jquery-3.6.1.min.js"></script>
+    <script src="js/scoreCreator.js"></script>
+</head>
+
+<body>
+    <!-- Menu -->
+    <ul class="menu">
+        <li class="menu-category">
+            <h4 class="menu-header">General</h4>
+            <ul class="menu-item-list">
+                <li class="menu-item" id="add_bar">Add bar</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Note input -->
+    <ul class="note-input">
+        <button class="note-input-value">
+            <m-note id="whole-note">
+                <m-note-head></m-note-head>
+            </m-note>
+        </button>
+        <button class="note-input-value">
+            <m-note id="half-note">
+                <m-note-head></m-note-head>
+                <m-note-stem></m-note-stem>
+            </m-note>
+        </button>
+        <button class="note-input-value">
+            <m-note id="quarter-note">
+                <m-note-head class="black"></m-note-head>
+                <m-note-stem></m-note-stem>
+            </m-note>
+        </button>
+        <button class="note-input-value">
+            <m-note id="eight-note">
+                <m-note-head class="black"></m-note-head>
+                <m-note-stem></m-note-stem>
+                <m-note-flag>
+                    <img src="img/noteFlag.svg"/>
+                </m-note-flag>
+            </m-note>
+        </button>
+        <button class="note-input-value">
+            <m-note id="sixteenth-note">
+                <m-note-head class="black"></m-note-head>
+                <m-note-stem></m-note-stem>
+                <m-note-flag>
+                    <img src="img/noteFlag.svg"/>
+                </m-note-flag>
+                <m-note-flag class="sixteenths">
+                    <img src="img/noteFlag.svg"/>
+                </m-note-flag>
+            </m-note>
+        </button>
+        <button class="note-input-value">
+            <m-note id="thirtysecond-note">
+                <m-note-head class="black"></m-note-head>
+                <m-note-stem></m-note-stem>
+                <m-note-flag>
+                    <img src="img/noteFlag.svg"/>
+                </m-note-flag>
+                <m-note-flag class="sixteenths">
+                    <img src="img/noteFlag.svg"/>
+                </m-note-flag>
+                <m-note-flag class="thirtyseconds">
+                    <img src="img/noteFlag.svg"/>
+                </m-note-flag>
+            </m-note>
+        </button>
+        <m-current-note-input-value class="note-input-value">
+            <m-note id="quarter-note">
+                <m-note-head class="black"></m-note-head>
+                <m-note-stem></m-note-stem>
+            </m-note>
+        </m-current-note-input-value>
+    </ul>
+
+    <!-- Dialog -->
+    <m-dialog>
+        <h3>Dialog</h3>
+        <m-dialog-close>
+            <m-dialog-close-line1></m-dialog-close-line1>
+            <m-dialog-close-line2></m-dialog-close-line2>
+        </m-dialog-close>
+        <ul>
+            <li class="dialog-item"></li>
+        </ul>
+    </m-dialog>
+
+    <!-- Scripts -->
+    <script src="js/noteInput.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

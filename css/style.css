@@ -1,0 +1,28 @@
+:root {
+    --bgColor: white;
+    --highlightColor: lightblue;
+    /* One parameter to rule them all */
+    --staffSize: 2;
+    /* */
+    --scoreMargin: 25px;
+    --staffLineSize: calc(1.5px * var(--staffSize));
+    --staffLineMargin: calc(1px * var(--staffSize));
+    --measureLineSize: calc(1px * var(--staffSize));
+    --linesPerStaff: 1;
+    --scoreWidth: 1000px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+m-staff-line:hover,
+m-white-staff-line:hover,
+m-measure-line:hover,
+.menu-header:hover,
+.menu-item:hover {
+    background-color: var(--highlightColor) !important;
+}
