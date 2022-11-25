@@ -5,7 +5,7 @@
     --staffSize: 2;
     /* */
     --scoreMargin: 25px;
-    --staffLineSize: calc(1.5px * var(--staffSize));
+    --staffLineSize: calc(1px * var(--staffSize));
     --staffLineMargin: calc(1px * var(--staffSize));
     --measureLineSize: calc(1px * var(--staffSize));
     --linesPerStaff: 1;

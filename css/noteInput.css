@@ -1,16 +1,16 @@
 :root {
-    --noteHeadWidth: calc(5px * var(--staffSize));
-    --noteHeadHeight: calc(3px * var(--staffSize));
+    --noteHeadWidth: calc(4px * var(--staffSize));
+    --noteHeadHeight: calc(2px * var(--staffSize));
     --noteHeadBorder: calc(1px * var(--staffSize));
     --noteHeadTop: calc(-1.7px * var(--staffSize));
     --stemHeight: calc(10px * var(--staffSize));
     --stemWidth: calc(0.75px * var(--staffSize));
     --stemTop: calc(-10px * var(--staffSize));
-    --stemLeft: calc(6.25px * var(--staffSize));
-    --noteFlagTop: calc(-11.45px * var(--staffSize));
-    --noteFlagWidth: calc(12.5px * var(--staffSize));
-    --noteFlagHeight: calc(5px * var(--staffSize));
-    --noteFlagLeft: calc(-1.65px * var(--staffSize));
+    --stemLeft: calc(5.2px * var(--staffSize));
+    --noteFlagTop: calc(-11.3px * var(--staffSize));
+    --noteFlagWidth: calc(10px * var(--staffSize));
+    --noteFlagHeight: calc(8px * var(--staffSize));
+    --noteFlagLeft: calc(1.75px * var(--staffSize));
 }
 
 .note-input {
@@ -72,17 +72,12 @@ m-note-flag {
 }
 
 m-note-flag>* {
-    width: 150%;
-    height: 150%;
+    width: 100%;
+    height: 100%;
     top: var(--noteFlagTop);
     position: absolute;
     left: var(--noteFlagLeft);
     transform: rotateX(180deg);
-    /*width: 100%;
-    height: 100%;
-    top: var(--noteFlagTop);
-    position: absolute;
-    left: var(--noteFlagLeft);*/
 }
 
 m-note-stem {
