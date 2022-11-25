@@ -4,8 +4,7 @@ m-score {
     width: var(--scoreWidth);
     height: 100%;
     margin: var(--scoreMargin);
-    margin-top: 50px;
-    top: 50px;
+    top: calc(50px * var(--staffSize));
     z-index: 0;
 }
 
