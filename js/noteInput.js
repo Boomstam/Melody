@@ -25,12 +25,13 @@ function onStaffLineClicked(lineElement, lineIndex, elementWidthPercentage){
 }
 
 function getPercentage(elementWidthPercentage){
+  console.log("elementWidth percentage: " + elementWidthPercentage);
   const currentInputValMod = 100 / Math.pow(2, currentInputValue);
   console.log("input val mod: " + currentInputValMod);
-  console.log("current input value: " + currentInputValue + "; power: " + Math.pow(2, currentInputValMod));
-  const percentage = Math.round((elementWidthPercentage * 100) / currentInputValMod) * currentInputValMod;
+  console.log("current input value: " + currentInputValue + "; power: " + Math.pow(2, currentInputValue));
+  let percentage = Math.round((elementWidthPercentage * 100) / currentInputValMod) * currentInputValMod;
+  if(percentage === 100) percentage -= currentInputValMod;
   console.log("percentage: " + percentage);
-
   return percentage;
 }
 
